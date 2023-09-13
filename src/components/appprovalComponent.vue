@@ -92,7 +92,7 @@ export default {
                         <div class="card_title">介绍人保户编号:{data.introducer_code}</div>
                         <div class="card_title">日期：{data.registration_date}</div>
                         <a class="card_title" style='color:blue'>
-                            {this.primaryNode.length != 0 && data.code === this.treeData.data.code ? '上一级' : ''} </a>
+                            {this.primaryNode.length != 0 && data.code === this.treeData.data.code && data.type === 3 ? '上一级' : ''} </a>
                     </div>
                 </div>
             )
